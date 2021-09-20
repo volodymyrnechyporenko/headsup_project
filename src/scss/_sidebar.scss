@@ -1,0 +1,58 @@
+.sidebar {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    list-style: none;
+    height: 100vh;
+    top: 0;
+    left: -100%;
+    background-color: $dark;
+    z-index: 2;
+    transition: all 0.3s ease-in-out;
+    z-index: 8;
+
+    & ul {
+        list-style-type: none;
+        padding-left: 0;
+
+        & li {
+            margin-top: 2em;
+            font-size: calc(16px + 16 * (100vw / 1920));
+            font-weight: 700;
+            color: $white;
+
+            &:nth-child(1) {
+                margin-top: 3em;
+            }
+        }
+    }
+}
+._active {
+    transform: translate(100%, 0px);
+    transition: all 0.5s ease-in-out;
+}
+.menu-icon {
+    position: fixed;
+    right: 1em;
+    top: 0;
+    z-index: 9;
+    background: transparent;
+    text-align: center;
+
+    @media screen and (max-width: 768px) {
+        position: absolute;
+        right: 0.4em;
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 1366px) {
+        position: absolute;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    & .fa-2x {
+        color: $warm;
+    }
+}

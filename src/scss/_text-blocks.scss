@@ -1,0 +1,81 @@
+footer {
+    background-color: $green;
+    color: $white;
+    margin-top: 120px;
+}
+.text-bg {
+    background-color: $warm;
+    color: $violet;
+}
+.col-lg-5, .col-lg-11 {
+    padding-bottom: 3vh;
+}
+.no-space {
+    padding-bottom: 0;
+}
+.container-fluid {
+    margin-top: 120px;
+
+    &:nth-child(1) {
+        margin-top: 6vh;
+    }
+}
+.hide {
+    opacity: 0;
+}
+.show {
+    animation: navSlow ease 1.2s;
+}
+.inline-narrow-pupils, .inline-narrow-teachers {
+    color: $white;
+    padding: $regular-size;
+    box-shadow: $shadow $dark;
+    height: 100%;
+}
+.inline-narrow-pupils {
+    background-color: $red;
+}
+.inline-narrow-teachers {
+    background-color: $green;
+}
+.inline-text-pupils, .inline-text-teachers {
+    color: $white;
+    padding: $regular-size;
+    box-shadow: $shadow $dark;
+    height: 100%;
+}
+.inline-text-pupils {
+    background-color: $red;
+}
+.inline-text-teachers {
+    background-color: $green;
+}
+.img-text {
+    position: relative;
+    padding-bottom: 1em;
+}
+.captcha {
+    height: auto;
+    width: 12em;
+    margin-bottom: 2vh;
+
+    & img {
+        max-width: 100%;
+    }
+}
+.scrollToTop{
+    height: 80px;
+    text-align: center;
+    font-weight: bold;
+    color: $warm;
+    text-decoration: none;
+    position: fixed;
+    bottom: 0px;
+    right: 1rem;
+    display: none;
+    z-index: 7;
+
+    & svg:hover {
+        filter: $warm;
+    }
+}

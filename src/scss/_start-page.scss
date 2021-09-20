@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/MYRIADWEBPRO-BOLD.TTF');
+}
+
+$font-stack: "Myriad Pro";
+
+.wrapper-01, .wrapper-02 {
+    padding: 2em 1em 1em 1em;
+    box-shadow: $shadow $warm;
+    animation: navSlow ease 1s;
+}
+@keyframes navSlow {
+    0% {
+      opacity: 0;
+    }
+    60% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+.wrapper-01 {
+    background-color: $red;
+}
+.wrapper-02 {
+    background-color: $green;
+}
+.carousel {
+    border: 1px solid $warm;
+    background-color: $dark;
+
+    & img {
+        max-width: 100%;
+    }
+}
+.heading-01 {
+    font: 100% $font-stack;
+    font-weight: 700;
+    color: $white;
+    margin-bottom: 0.5em;
+    text-align: center;
+    font-size: calc(22px + 8 * (100vw / 1920));
+}

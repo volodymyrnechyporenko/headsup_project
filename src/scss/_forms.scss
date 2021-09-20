@@ -1,0 +1,74 @@
+label {
+    display: inline-block;
+    font-size: calc(14px + 4 * (100vw / 1920));
+    margin-bottom: 0.8em;
+}
+input[type=text], input[type=email], textarea {
+    border: 0.104vw solid $violet;
+    border-radius: $radius;
+    background-color: $warm;
+    color: $white;
+    margin-bottom: 0.4em;
+    padding: 0.3em;
+    width: 100%;
+    outline: none;
+
+    &:focus {
+        border: 0.2vw solid $violet;
+    }
+}
+textarea {
+    height: 12em;
+    resize: vertical;
+}
+button {
+    background-color: $violet;
+    font-family: $roboto;
+    font-size: calc(14px + 4 * (100vw / 1920));
+    font-weight: 400;
+    border: none;
+    border-radius: $radius;
+    color: $white;
+    padding: 0.8em 1.4em;
+    cursor: pointer;
+    transition: background .1s linear;
+
+    &:hover,
+    &:focus {
+        background-color: $green;
+    }
+}
+::placeholder {
+    font-family: $roboto;
+    font-size: calc(14px + 4 * (100vw / 1920));
+    color: $grey;
+}
+input[type=radio]:after {
+    color: $white;
+    width: 100%;
+    display: block;
+}
+.radio {
+    position: absolute;
+    opacity: 0;
+}
+.radio + label {
+    position: relative;
+    padding: 0 0 0 1.4em;
+    cursor: pointer;
+
+}
+.radio + label:before {
+    content: '';
+    position: absolute;
+    top: 0.2em;
+    left: 0;
+    width: 1em;
+    height: 1em;
+    border: 0.24em solid $grey;
+    border-radius: 50%;
+    background: $white;
+}
+.radio:checked + label:before {
+    box-shadow: 0 0 0 0.2vw $violet;
+}
